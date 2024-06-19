@@ -21,3 +21,75 @@ body {
   display: grid;
   grid-template-rows: auto 0px;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--Grayish-Blue);
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--Dark-Grayish-Blue);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    position: relative;
+    width: 100%;
+    max-width: 25rem;
+    padding: 1.5rem 1rem 0;
+}
+.advice-id{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+.advice-text{
+    margin: 20px auto 0; 
+    font-size: 28px;
+    width: 100%;
+    color: var(--Light-Cyan);
+}
+
+.divider{
+    margin: 20px 0 30px;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+#btnNewAdvice{
+    background-color: var(--Neon-Green);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#btnNewAdvice:hover {
+    box-shadow: 0 0 40px var(--Neon-Green);
+}
+
+
+@media (max-width: 530px) {
+    body{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
