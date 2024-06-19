@@ -4,6 +4,24 @@ document.getElementById('btnNewAdvice').addEventListener('click', ()=>{
     getApiData();
 })
 
+/************************************************************************************
+ * PROMISES
+ ************************************************************************************/
+const getApiData = ()=>{
+    axios.get('https://api.adviceslip.com/advice')
+    .then(function (response) {
+        document.getElementById('advice-number').innerText = response.data.slip.id;
+        document.getElementById('adviceTxt').innerText = `"${response.data.slip.advice}"`;
+    })
+    .catch(function (error) {
+        alert(error.message)
+        console.log(error);
+    })
+    .finally(function () {
+        document.getElementById('btnNewAdvice').style.display = 'flex'
+        console.log('Api call completed!');
+    });
+}
 
 /************************************************************************************
  * ASYNC AWAIT
