@@ -8,7 +8,19 @@
   <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
-
+  <div class="container">
+    <div class="advice-container">
+      <p class="advice-id">
+        Advice #<span id="advice-number"></span>
+      </p>
+      <p id="adviceTxt" class="advice-text">
+        Loading..
+      </p>
+    </div>
+    <img src="images/pattern-divider-desktop.svg" alt="" class="divider">
+    <button id="btnNewAdvice"><img src="/images/icon-dice.svg" alt="Dice to generate new advice"></button>
+  </div>
+  
   
   <script type="module" src="main.js"></script>
 </body>
