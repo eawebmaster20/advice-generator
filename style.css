@@ -2,10 +2,10 @@
 
 :root{
     --Light-Cyan: hsl(193, 38%, 86%);
-    --Neon-Green: #52ffa8;
-    --Grayish-Blue: hsl(220deg 21.95% 16.08%);
-    --Dark-Grayish-Blue: hsl(217.5deg 19.67% 23.92%);
-    --Dark-blue: hsl(220deg 21.95% 16.08%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(220, 21.95%, 16%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-blue: hsl(218, 23%, 16%);
 }
 
 *{
